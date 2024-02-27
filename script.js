@@ -1,6 +1,11 @@
-const pedine = document.querySelectorAll(".pedina");
+const pedineContainer = document.getElementById("pedine");
 
-for (const pedina of pedine) {
+for (let i = 0; i < 3; i++) {
+  const pedina = document.createElement("div");
+  pedina.classList.add("pedina");
+
+  pedineContainer.appendChild(pedina);
+
   pedina.addEventListener("mousedown", (e) => {
     const offsetX = e.clientX - pedina.offsetLeft;
     const offsetY = e.clientY - pedina.offsetTop;
