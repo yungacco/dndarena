@@ -4,12 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pedine rosse spostabili</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #fff;
+      font-family: sans-serif;
+    }
+    #pedine {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #ccc;
+      position: relative;
+    }
+    .pedina {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+    }
+  </style>
 </head>
 <body>
   <h1>Pedine rosse spostabili</h1>
   <p>Ecco le pedine:</p>
-  <div id="pedine"></div>
+  <div id="pedine">
+    <div class="pedina"></div>
+    <div class="pedina"></div>
+    <div class="pedina"></div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
